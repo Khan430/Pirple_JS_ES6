@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2019 by anonymous (http://jsbin.com/jaxakehibe/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+-/*                                    1st Module: Data Types
+                                   Lecture 1: Numbers and Strings 
+                                Homework Assignment#1: Favorite Song 
+*/
+
+// The Song has a official title as well as a commonly used title/aka
+
+var Title = 'Multazim Par Dua';
+console.log('Official Title: '+Title);
+
+/* In case if there is no aka, i.e, the field has no value '' this will result as false 
+and the output will advise us to use only the offical title */
+
+var aka = 'ilahi teri chaukhat par';
+
+if (Boolean(aka) === true){  
+  console.log('Also commonly known as '+aka);
+}
+else {
+  console.log('(no aka name, use Offical Title only)');
+}          
+
+// Here the album has object key values
+
+var Album = { 
+Name: 'Jalwa-e-Janan',
+Genere: 'Vocal Music',  
+Theme: 'Sprituality and Self Reflection',
+Recording_date: 2005 ,
+Release_date: 2006,
+};
+console.log("Name: " + Album.Name);
+console.log("Genere: "+Album.Genere);
+console.log("Theme: "+Album.Theme);
+console.log("Recording Date: " + Album.Recording_date);
+console.log("Release Date: " + Album.Release_date);
+
+/* Using Boolean to answer and provide the YT link, keeping in mind that null is truthy and if we want it to be
+falsey we have to give it zero value or no value */
+
+var Translation = null;
+var YT_Link = 'https://www.youtube.com/watch?v=-ivcYfkFG5o';
+if (Translation = true){
+  console.log('Song originally in Urdu Language but English Translation is available, kindly visit this YT link: '+YT_Link); 
+}
+else {
+  console.log('Sorry, No Translation Available'); 
+}
+
+// Here the duration has been given a form of a array
+
+var duration = ['0 Hours', '5 Minutes', '20 Seconds'];
+console.log("Duration: " + duration[0] + " & " + duration[1] + " & "  + duration[2]);
+
+
+</script>
+</body>
+</html>
